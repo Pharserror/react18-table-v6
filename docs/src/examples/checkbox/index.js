@@ -43,7 +43,7 @@ export class ComponentTest extends React.Component {
       selectAll: false
     };
   }
-  componentDidMount() {
+  UNSAFE_componentDidMount() {
     getData().then(data => {
       const columns = getColumns(data);
       this.setState({ data, columns });

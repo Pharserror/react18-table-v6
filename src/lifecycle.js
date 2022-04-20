@@ -19,11 +19,11 @@ export default Base =>
       this.state = this.calculateNewResolvedState(dataModel)
     }
 
-    componentDidMount () {
+    UNSAFE_componentDidMount () {
       this.fireFetchData()
     }
 
-    componentDidUpdate (prevProps, prevState) {
+    UNSAFE_componentDidUpdate (prevProps, prevState) {
       const oldState = this.getResolvedState(prevProps, prevState)
       const newState = this.getResolvedState(this.props, this.state)
 

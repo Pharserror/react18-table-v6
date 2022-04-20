@@ -64,7 +64,7 @@ export default class ReactTablePagination extends Component {
     }
   }
 
-  componentDidUpdate (prevProps, prevState) {
+  UNSAFE_componentDidUpdate (prevProps, prevState) {
     if (prevProps.page !== this.props.page || prevState.page !== this.state.page) {
       // this is probably safe because we only update when old/new props/state.page are different
       // eslint-disable-next-line react/no-did-update-set-state

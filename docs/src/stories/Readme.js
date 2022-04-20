@@ -17,7 +17,7 @@ export default class Story extends React.Component {
       </div>
     );
   }
-  componentDidMount() {
+  UNSAFE_componentDidMount() {
     global.Prism && global.Prism.highlightAll();
   }
 }

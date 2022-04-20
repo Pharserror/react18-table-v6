@@ -56,7 +56,7 @@ export class ComponentTest extends React.Component {
       selectType: "checkbox"
     };
   }
-  componentDidMount() {
+  UNSAFE_componentDidMount() {
     getData().then(data => {
       const columns = getColumns(data);
       const pivotBy = ["state", "post"];

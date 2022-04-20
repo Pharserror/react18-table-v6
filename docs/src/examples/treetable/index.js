@@ -31,7 +31,7 @@ export class ComponentTest extends React.Component {
       pivotBy: null // ["firstName", "lastName"],
     };
   }
-  componentDidMount() {
+  UNSAFE_componentDidMount() {
     getData().then(data => {
       // console.log('cwm data:',data);
       const pivotBy = ["state", "post", "city"];
